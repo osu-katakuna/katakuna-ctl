@@ -1,0 +1,31 @@
+{
+  "name": "katakuna-ctl",
+  "version": "1.0.0",
+  "description": "osu!katakuna private server control interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talnacialex/katakuna-ctl.git"
+  },
+  "keywords": [
+    "osu!",
+    "katakuna",
+    "private",
+    "server",
+    "control",
+    "interface"
+  ],
+  "author": "Talnaci Alexandru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talnacialex/katakuna-ctl/issues"
+  },
+  "homepage": "https://github.com/talnacialex/katakuna-ctl#readme",
+  "dependencies": {
+    "node-ipc": "^9.1.1",
+    "uuid": "^7.0.2"
+  }
+}
