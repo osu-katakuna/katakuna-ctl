@@ -94,11 +94,11 @@ class Controller {
 
   trollUser(user_id, mode, message) {
     return new Promise((r, f) => {
-      const allowed_troll_modes = ["notification", "jumpscare", "chat_attention"];
+      const allowed_troll_modes = ["notification", "jumpscare", "chat_attention", "force_exit"];
       const message_troll_modes = ["notification", "jumpscare"];
 
       if(!allowed_troll_modes.includes(mode)) {
-        throw new Error("The allowed troll modes are: notification, jumpscare, chat_attention");
+        throw new Error("The allowed troll modes are: notification, jumpscare, chat_attention, force_exit");
       }
 
       if(message_troll_modes.includes(mode) && (message == undefined || message.length < 1)) {
